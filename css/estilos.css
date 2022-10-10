@@ -6,20 +6,59 @@ html{
     font-size: 1rem;
     height: 100%;
 }
+
 header, footer{
-    background-color: rgb(242, 253, 91);
-    text-align: center;
+    /*background-color: rgb(242, 253, 91);
+    /*text-align: center;*/
+    /*background: rgb(181,230,231);
+    background: linear-gradient(90deg, rgba(181,230,231,0.989233193277311) 12%, rgba(34,140,154,1) 83%, rgba(0,255,226,1) 100%);rgba(181,230,231,0.989233193277311) 12%, rgba(34,154,150,1) 83%, rgba(0,255,226,1) 100%);*/
+    background: rgb(181,230,231);
+    background: radial-gradient(circle, rgba(181,230,231,0.989233193277311) 12%, rgba(44,139,153,0.9671218829328606) 83%, rgba(0,255,226,1) 100%);
     border-style: double;
     border: 3px;
+}
+.flex-container{
+    display: flex;
+    flex-flow: row wrap;    
+    justify-content: space-evenly;
+    align-items: center;
+    
+
+}
+.nav{
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2vw;
+    text-align:center;
+}
+main{
+    /*background-image: url("/imagenes/Music page.png");*/
+   /* background: rgb(181,230,231);
+    background: linear-gradient(90deg, rgba(181,230,231,0.989233193277311) 12%, rgba(117,200,197,1) 83%, rgba(0,255,226,1) 100%);*/
+    
+   /* background: rgb(181,230,231);
+    background: linear-gradient(90deg, rgba(181,230,231,0.989233193277311) 12%, rgba(42,178,197,1) 83%, rgba(0,255,226,1) 100%);*/
+    background-color: #94f9ee;
+    background-image: linear-gradient(62deg, #94f9ee 0%, #92c6f9 100%);
+
+
+
+
+    /*background-color: aquamarine;
+    background-repeat: no-repeat;*/
+    /*background-size: cover;*/
 }
 p{
     text-align: center;
     text-shadow: 3px;
     font-weight: bold;
-
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2vw;
 }
 
 .header-logo{
     border-color: rgb(243, 183, 32);
-    text-align: right;    
+    text-align:left;    
 }
+
