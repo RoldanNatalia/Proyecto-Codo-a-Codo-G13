@@ -12,9 +12,14 @@ header, footer{
     /*text-align: center;*/
     /*background: rgb(181,230,231);
     background: linear-gradient(90deg, rgba(181,230,231,0.989233193277311) 12%, rgba(34,140,154,1) 83%, rgba(0,255,226,1) 100%);rgba(181,230,231,0.989233193277311) 12%, rgba(34,154,150,1) 83%, rgba(0,255,226,1) 100%);*/
+
+
+    /*****************************
     background: rgb(181,230,231);
     background: radial-gradient(circle, rgba(181,230,231,0.989233193277311) 12%, rgba(44,139,153,0.9671218829328606) 83%, rgba(0,255,226,1) 100%);
-    border-style: double;
+    */
+    background-color: whitesmoke;
+    display: double;
     border: 3px;
 }
 .flex-container{
@@ -25,11 +30,14 @@ header, footer{
     
 
 }
-.nav{
+.nav {
     text-decoration: none;
     font-family: 'Roboto', sans-serif;
-    font-size: 2vw;
+    font-size: 1vw;
     text-align:center;
+    color:grey;
+    font-weight: bold;
+    
 }
 main{
     /*background-image: url("/imagenes/Music page.png");*/
@@ -38,8 +46,12 @@ main{
     
    /* background: rgb(181,230,231);
     background: linear-gradient(90deg, rgba(181,230,231,0.989233193277311) 12%, rgba(42,178,197,1) 83%, rgba(0,255,226,1) 100%);*/
-    background-color: #94f9ee;
-    background-image: linear-gradient(62deg, #94f9ee 0%, #92c6f9 100%);
+    
+    /*background-color: #94f9ee;
+    background-image: linear-gradient(62deg, #94f9ee 0%, #92c6f9 100%);*/
+
+    background: rgb(181,230,231);
+    background: radial-gradient(circle, rgba(181,230,231,0.989233193277311) 12%, rgba(44,139,153,0.9671218829328606) 83%, rgba(0,255,226,1) 100%);
 
 
 
@@ -59,6 +71,64 @@ p{
 
 .header-logo{
     border-color: rgb(243, 183, 32);
-    text-align:left;    
+    text-align:left;   
+    width: 30px; 
 }
 
+#footer{
+    height: 50px;
+    font-size: small;
+}
+.textfooter{
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1vw;
+    color:grey;
+}
+.tarjeta{
+    width: 300px;
+    border: 1px solid rgb(202, 201, 201);
+    border: radius 5px;
+    object-fit: cover;
+    padding-bottom: 10px;
+    
+ }
+
+ .tarjeta p, .tarjeta h2{
+    padding: 10px;
+
+ }
+ .tarjeta p{
+    text-align: justify;
+    font-size: small;
+ }
+
+.tarjeta>img{
+    width: 100%;
+}
+
+.contenedor{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    row-gap: 10px;
+}
+@media only screen and (min-width: 600px)
+ { 
+    header a{
+        width: auto;
+        display: inline;
+    }
+    
+}
+.boton{
+    background-color: rgb(85, 122, 240);
+    border-radius: 5px;
+    color: white;
+    margin: 20px;
+    text-decoration:none;
+    border: 10px 5px;
+    padding: 10px;
+}
