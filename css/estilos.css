@@ -1,6 +1,8 @@
 *{
     padding: 0;
+    margin:0;
     box-sizing: border-box;
+    
 }
 html{
     font-size: 1rem;
@@ -8,19 +10,19 @@ html{
 }
 
 header, footer{
-    /*background-color: rgb(242, 253, 91);
-    /*text-align: center;*/
+   
+    /*background-color: whitesmoke;*/
+
+
+    background: #abbaab;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ffffff, #abbaab);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ffffff, #abbaab); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
     /*background: rgb(181,230,231);
-    background: linear-gradient(90deg, rgba(181,230,231,0.989233193277311) 12%, rgba(34,140,154,1) 83%, rgba(0,255,226,1) 100%);rgba(181,230,231,0.989233193277311) 12%, rgba(34,154,150,1) 83%, rgba(0,255,226,1) 100%);*/
-
-
-    /*****************************
-    background: rgb(181,230,231);
-    background: radial-gradient(circle, rgba(181,230,231,0.989233193277311) 12%, rgba(44,139,153,0.9671218829328606) 83%, rgba(0,255,226,1) 100%);
-    */
-    background-color: whitesmoke;
-    display: double;
+    background: radial-gradient(circle, rgba(181,230,231,0.989233193277311) 12%, rgba(44,139,153,0.9671218829328606) 83%, rgba(0,255,226,1) 100%);*/
+    display:double;
     border: 3px;
+    /*box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;*/
 }
 .flex-container{
     display: flex;
@@ -40,16 +42,7 @@ header, footer{
     
 }
 main{
-    /*background-image: url("/imagenes/Music page.png");*/
-   /* background: rgb(181,230,231);
-    background: linear-gradient(90deg, rgba(181,230,231,0.989233193277311) 12%, rgba(117,200,197,1) 83%, rgba(0,255,226,1) 100%);*/
     
-   /* background: rgb(181,230,231);
-    background: linear-gradient(90deg, rgba(181,230,231,0.989233193277311) 12%, rgba(42,178,197,1) 83%, rgba(0,255,226,1) 100%);*/
-    
-    /*background-color: #94f9ee;
-    background-image: linear-gradient(62deg, #94f9ee 0%, #92c6f9 100%);*/
-
     background: rgb(181,230,231);
     background: radial-gradient(circle, rgba(181,230,231,0.989233193277311) 12%, rgba(44,139,153,0.9671218829328606) 83%, rgba(0,255,226,1) 100%);
 
@@ -72,7 +65,14 @@ p{
 .header-logo{
     border-color: rgb(243, 183, 32);
     text-align:left;   
-    width: 30px; 
+    height: 5vw;
+    
+}
+.img_logo{
+    height: 100%;
+
+    
+
 }
 
 #footer{
@@ -106,6 +106,7 @@ p{
 
 .tarjeta>img{
     width: 100%;
+    object-fit: cover;
 }
 
 .contenedor{
@@ -131,4 +132,21 @@ p{
     text-decoration:none;
     border: 10px 5px;
     padding: 10px;
+    
+}
+a.boton:hover{
+    color:grey;
+    background-color: rgb(255, 255, 255, 0.6);
+    scale: (1.5);
+   /* transform:scale(1.5, 2)*/
+
+}
+
+a.nav:hover{
+    color:lightgray
+}
+.foter_redes{
+    width: 33%;
+    text-align: center;
+    float:right;
 }
